@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springconfigTest
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.yhua6.com/liyunhua/mec-repo/
+      name: repo
+      label: main
+      profile: dev
+server:
+  port: 8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
